@@ -1,0 +1,135 @@
+// backend/src/data/mockLeads.js - Sample Lead Data for Demo
+const mockLeads = [
+  {
+    id: 1,
+    email: 'john.smith@techcorp.com',
+    firstName: 'John',
+    lastName: 'Smith',
+    company: 'TechCorp Solutions',
+    title: 'VP of Sales',
+    industry: 'Technology',
+    companySize: 'large',
+    source: 'website',
+    message: 'Interested in automating our sales process and improving lead conversion rates',
+    phone: '+1-555-0123',
+    website: 'https://techcorp.com',
+    score: 87,
+    priority: 'High',
+    status: 'processed',
+    createdAt: new Date().toISOString(),
+    processedBy: 'lead-agent',
+    aiInsights: {
+      reasoning: 'Strong company profile, senior decision-maker title, clear pain point expressed',
+      strengths: ['Enterprise company', 'C-level contact', 'Specific use case'],
+      concerns: ['No budget information', 'Timeline not specified'],
+      estimatedValue: 75000,
+      conversionProbability: 78
+    }
+  },
+  {
+    id: 2,
+    email: 'sarah.chen@growthco.com',
+    firstName: 'Sarah',
+    lastName: 'Chen',
+    company: 'GrowthCo',
+    title: 'Marketing Director',
+    industry: 'E-commerce',
+    companySize: 'medium',
+    source: 'linkedin',
+    message: 'Looking for lead scoring solutions to improve our marketing ROI',
+    phone: '+1-555-0456',
+    website: 'https://growthco.com',
+    score: 72,
+    priority: 'Medium',
+    status: 'contacted',
+    createdAt: new Date(Date.now() - 86400000).toISOString(),
+    processedBy: 'lead-agent',
+    aiInsights: {
+      reasoning: 'Mid-market opportunity, marketing focused, good engagement',
+      strengths: ['Clear use case', 'Marketing budget likely', 'Active on LinkedIn'],
+      concerns: ['Not C-level', 'Smaller company size'],
+      estimatedValue: 35000,
+      conversionProbability: 65
+    }
+  },
+  {
+    id: 3,
+    email: 'mike.jones@startupxyz.com',
+    firstName: 'Mike',
+    lastName: 'Jones',
+    company: 'StartupXYZ',
+    title: 'CEO',
+    industry: 'Fintech',
+    companySize: 'small',
+    source: 'referral',
+    message: 'Heard great things about RevenueFlow from a colleague. Need to scale our sales process.',
+    phone: '+1-555-0789',
+    website: 'https://startupxyz.com',
+    score: 68,
+    priority: 'Medium',
+    status: 'new',
+    createdAt: new Date(Date.now() - 3600000).toISOString(),
+    processedBy: 'lead-agent',
+    aiInsights: {
+      reasoning: 'CEO contact is strong, referral source excellent, startup budget concerns',
+      strengths: ['CEO direct contact', 'Referral source', 'Growth stage company'],
+      concerns: ['Limited budget likely', 'Small team', 'May need time to decide'],
+      estimatedValue: 25000,
+      conversionProbability: 55
+    }
+  },
+  {
+    id: 4,
+    email: 'lisa.wang@enterprise.com',
+    firstName: 'Lisa',
+    lastName: 'Wang',
+    company: 'Enterprise Corp',
+    title: 'Head of Revenue Operations',
+    industry: 'Manufacturing',
+    companySize: 'large',
+    source: 'webinar',
+    message: 'Attended your webinar on autonomous revenue operations. Very interested in a demo.',
+    phone: '+1-555-0321',
+    website: 'https://enterprise.com',
+    score: 92,
+    priority: 'Critical',
+    status: 'processing',
+    createdAt: new Date(Date.now() - 1800000).toISOString(),
+    processedBy: 'lead-agent',
+    aiInsights: {
+      reasoning: 'Perfect fit - RevOps title, engaged prospect, enterprise scale',
+      strengths: ['Perfect job title match', 'High engagement', 'Enterprise budget'],
+      concerns: ['Complex sales cycle likely', 'Multiple stakeholders'],
+      estimatedValue: 150000,
+      conversionProbability: 85
+    }
+  },
+  {
+    id: 5,
+    email: 'david.kim@retailchain.com',
+    firstName: 'David',
+    lastName: 'Kim',
+    company: 'RetailChain Inc',
+    title: 'Sales Manager',
+    industry: 'Retail',
+    companySize: 'medium',
+    source: 'google_ads',
+    message: 'Need help with lead qualification and sales forecasting',
+    phone: '+1-555-0654',
+    website: 'https://retailchain.com',
+    score: 59,
+    priority: 'Low',
+    status: 'nurturing',
+    createdAt: new Date(Date.now() - 7200000).toISOString(),
+    processedBy: 'lead-agent',
+    aiInsights: {
+      reasoning: 'Mid-level contact, specific needs, but lower urgency indicators',
+      strengths: ['Specific pain points', 'Active searcher', 'Retail experience'],
+      concerns: ['Manager level not decision maker', 'Industry not ideal fit'],
+      estimatedValue: 20000,
+      conversionProbability: 42
+    }
+  }
+];
+
+module.exports = { mockLeads };
